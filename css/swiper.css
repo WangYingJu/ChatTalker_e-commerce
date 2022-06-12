@@ -1,0 +1,45 @@
+.swiper {
+  padding: 0 3px;
+}
+
+/* 固定每個卡片的高 */
+.swiper-slide {
+  height: initial;
+}
+
+/* 圓點 */
+.swiper-pagination-bullet {
+  /* 原點寬高尺寸 */
+  width: var(
+    --swiper-pagination-bullet-width,
+    var(--swiper-pagination-bullet-size, 10px)
+  );
+  height: var(
+    --swiper-pagination-bullet-height,
+    var(--swiper-pagination-bullet-size, 10px)
+  );
+  display: inline-block;
+  border-radius: 50%;
+  /* 圓點的顏色設定 */
+  background: var(--swiper-pagination-bullet-inactive-color, #ffd153);
+  opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.4);
+}
+
+/* 將底部 pagination 分頁的 active 狀態改為想要的樣式 */
+.swiper-pagination-bullet-active {
+  width: 20px;
+  height: 10px;
+  border-radius: 10px;
+  opacity: 1;
+}
+
+/* 被選取的圓點主色 */
+:root {
+  --swiper-theme-color: #ffd153;
+}
+
+/* 讓分頁圓點移至下方 */
+.swiper-pagination {
+  position: static;
+  margin-top: 24px;
+}
