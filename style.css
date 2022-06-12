@@ -1,0 +1,919 @@
+body {
+  line-height: 1.5;
+}
+
+.bg-home img {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  max-width: 63%;
+}
+
+.bg-program {
+  position: relative;
+  z-index: -2;
+  top: 0;
+}
+
+.bg-program-gray {
+  background-color: #f7f9fd;
+  width: 100%;
+  height: 470px;
+  border: 0;
+  border-radius: 0 0 0 300px;
+  position: absolute;
+  z-index: -1;
+  right: 0;
+}
+
+.bg-program img {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.ball01 {
+  width: 136px;
+  height: 360px;
+  background-image: url("https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/ball01.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  top: 550px;
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}
+
+.ball02 {
+  width: 210px;
+  height: 350px;
+  background-image: url("https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/ball02.svg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  top: 1700px;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+
+.ball03 {
+  width: 160px;
+  height: 160px;
+  background-image: url("https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/ball03.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 2722px;
+  position: absolute;
+  left: 50px;
+  z-index: -1;
+}
+
+.ball04 {
+  width: 94px;
+  height: 361px;
+  background-image: url("https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/ball03.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 361px;
+  top: 885px;
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}
+
+.go-top {
+  position: fixed;
+  z-index: 99;
+  top: 80vh;
+  right: 60px;
+  display: none;
+}
+
+/* font size */
+.f-s-xxs {
+  font-size: 12px;
+}
+
+.f-s-xs {
+  font-size: 16px;
+}
+
+.f-s-s {
+  font-size: 18px;
+}
+
+.f-s-m {
+  font-size: 20px;
+}
+
+.f-s-lg {
+  font-size: 24px;
+}
+
+.f-s-xl {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.f-s-xxl {
+  font-size: 48px;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+/* margin-bottom設定 */
+.mg-b-xs {
+  margin-bottom: 8px;
+}
+
+.mg-b-s {
+  margin-bottom: 16px;
+}
+
+.mg-b-sm {
+  margin-bottom: 32px;
+}
+
+.mg-b-m {
+  margin-bottom: 48px;
+}
+
+.mg-b-lg {
+  margin-bottom: 100px;
+}
+
+/* 共用盒模型陰影 */
+.box-shadow {
+  background-color: #fff;
+  box-shadow: 0 0 5px 1px rgb(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+/* 共用方案費用a連結 */
+.program {
+  color: #fff;
+  background-color: #56c4c5;
+  padding: 8px 32px;
+  border-radius: 50px;
+}
+
+.program:hover {
+  opacity: 0.8;
+}
+
+.btn2-program {
+  color: #56c4c5;
+  /* color: #fff; */
+  border: #56c4c5 1px solid;
+  /* background-color: #56C4C5; */
+  padding: 12px 32px;
+  border-radius: 50px;
+  white-space: nowrap;
+}
+
+.btn2-program:hover,
+.btn2-program-active {
+  color: #fff;
+  background-color: #56c4c5;
+}
+
+.display-sm-none {
+  display: block;
+}
+
+.display-pc-none {
+  display: none;
+}
+
+/* 外層wrap 要自適應寫max-width 不要寫width */
+.wrap {
+  max-width: 1088px;
+  margin: 0 auto;
+}
+
+.logo {
+  max-width: 200px;
+}
+
+/* header */
+.header-setting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 54px;
+}
+
+.header .program {
+  background-color: #ff5d50;
+}
+
+/* 主視覺 */
+.main {
+  padding: 158px 0;
+  background-image: url("https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/home.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  position: relative;
+}
+
+.main span {
+  color: #56c4c5;
+}
+
+.main h1,
+.program-main h1 {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.content {
+  margin-top: 150px;
+}
+
+/* program.html start */
+.program-main {
+  padding: 62px 0 180px 0;
+}
+
+.program-content {
+  padding: 0 90px;
+}
+
+.program-person {
+  display: flex;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  margin-bottom: 54px;
+  padding: 20px;
+}
+
+.program-person li + li {
+  margin-left: 16px;
+  /* margin-bottom: 32px; */
+}
+
+.version-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.version-items {
+  padding: 16px 32px 40px 32px;
+}
+
+.version-list h3 {
+  font-weight: bold;
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 16px;
+}
+
+.program-num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.program-num span {
+  font-weight: normal;
+  color: #56c4c5;
+}
+
+.program-num li + li {
+  margin-left: 20px;
+}
+
+.program-num sub {
+  font-size: 12px;
+  color: #56c4c5;
+}
+
+.program-detail {
+  text-align: left;
+}
+.program-detail img {
+  width: 19px;
+  margin-right: 13px;
+}
+
+.program-num {
+  display: flex;
+  justify-content: center;
+}
+
+.gray-box {
+  background-color: #f5f5f5;
+  border: 0;
+  border-radius: 12px;
+  padding: 24px 32px;
+}
+
+.QA-items {
+  padding: 19px 32px;
+}
+
+.show-defalt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.QA-info {
+  margin-top: 24px;
+  font-size: 16px;
+  line-height: 2;
+  color: #747474;
+}
+
+.QA-list li + li {
+  margin-top: 16px;
+}
+
+.QA-list {
+  margin-bottom: 100px;
+}
+
+.btn-QA {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: unset;
+  background-color: unset;
+}
+
+.QA-select {
+  font-weight: 600;
+  color: #56c4c5;
+}
+
+.btn-QA-img {
+  transition: all 0.3s;
+}
+
+.add-transform-right {
+  /* Safari和Chrome */
+  -webkit-transform: rotate(180deg);
+}
+/* program.html end */
+
+/* 三大平台 */
+.platform-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.platform-list h3 {
+  font-weight: bold;
+  margin: 24px 0;
+}
+
+.platform-list img {
+  display: block;
+  width: 90px;
+  margin: 0 auto;
+}
+
+.platform-list p {
+  color: #747474;
+}
+
+/* 角色卡 */
+.character-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.character-items {
+  width: 260px;
+}
+
+.character-items img {
+  border-radius: 12px 12px 0 0;
+}
+
+.character-items h3 {
+  color: #56c4c5;
+  margin: 16px;
+  font-weight: bold;
+}
+
+.character-items p {
+  margin: 16px 16px 24px 16px;
+}
+
+/* 方案介紹 */
+.program-info {
+  display: flex;
+  align-items: center;
+}
+
+.program-info .program-list {
+  display: flex;
+  width: 65%;
+  flex-wrap: wrap;
+}
+
+.program-info .container {
+  width: 50%;
+}
+
+.program-items {
+  width: 230px;
+  padding: 32px 32px 48px 32px;
+  margin-right: 47px;
+  margin-bottom: 28px;
+}
+
+.program-icon {
+  width: 86px;
+  height: 86px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.program-items h3 {
+  font-weight: bold;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.program-info .container h2 {
+  margin-top: 0;
+}
+
+/* 好評如潮 */
+.feedback-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 104px;
+  margin-bottom: 24px;
+}
+
+.feedback-items {
+  width: 30%;
+  position: relative;
+  padding: 48px 32px 24px 32px;
+}
+
+.feedback-list .user-setting {
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  top: -55px;
+}
+
+.feedback-list .user1 {
+  background-image: url("https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/user01.jpg");
+}
+
+.feedback-list .user2 {
+  background-image: url("https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/user02.jpg");
+}
+
+.feedback-list .user3 {
+  background-image: url("https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/user03.jpg");
+}
+
+.feedback-list h3 {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.feedback-list hr {
+  margin: 24px 0;
+  border: 1px solid #dddddd80;
+}
+
+.rank {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 表尾 */
+.copyright {
+  background-color: #f5f5f5;
+  color: #221e1f;
+  padding: 16px;
+}
+
+.footer {
+  padding-top: 260px;
+  padding-bottom: 148px;
+  position: relative;
+}
+
+.footer img {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  width: 100%;
+}
+
+/* ---------------其他尺寸----------- */
+@media (max-width: 1199px) {
+  .ball01 {
+    top: 500px;
+  }
+
+  .ball02 {
+    top: 1455px;
+    right: 0;
+  }
+
+  .ball03 {
+    top: 2313px;
+    left: -20px;
+  }
+
+  .ball04 {
+    top: 885px;
+    left: 0;
+  }
+
+  /* font size */
+  .f-s-xs {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .f-s-s {
+    font-size: 14px;
+  }
+
+  .f-s-m {
+    font-size: 16px;
+  }
+
+  .f-s-lg {
+    font-size: 20px;
+  }
+
+  .f-s-xl {
+    font-size: 28px;
+  }
+
+  .f-s-xxl {
+    font-size: 44px;
+  }
+
+  /* margin-bottom設定 */
+  .mg-b-s {
+    margin-bottom: 12px;
+  }
+
+  .mg-b-sm {
+    margin-bottom: 28px;
+  }
+
+  .mg-b-m {
+    margin-bottom: 44px;
+  }
+
+  .mg-b-lg {
+    margin-bottom: 80px;
+  }
+
+  /* 外層wrap 要自適應寫max-width 不要寫width */
+  .wrap {
+    width: 90%;
+  }
+
+  /* 主視覺 */
+  .main {
+    padding: 100px 0;
+  }
+
+  /* 角色卡 */
+  .character-items {
+    width: 24%;
+  }
+
+  /* 方案介紹 */
+  .program-info .program-list {
+    width: 75%;
+  }
+
+  .version-list {
+    justify-content: space-between;
+  }
+
+  .version-items {
+    padding: 16px 16px 32px 16px;
+  }
+}
+
+@media (max-width: 1070px) {
+  .program-items {
+    width: 200px;
+    margin-right: 28px;
+    margin-bottom: 28px;
+  }
+
+  .version-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .version-items {
+    padding: 16px 32px 40px 32px;
+    margin-bottom: 20px;
+  }
+
+  .version-items {
+    width: 444px;
+  }
+}
+
+@media (max-width: 845px) {
+  .ball01 {
+    top: 433px;
+  }
+
+  .ball02 {
+    top: 1364px;
+  }
+
+  .program-items {
+    width: 170px;
+  }
+
+  .footer {
+    padding-top: 175px;
+    padding-bottom: 95px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* program.html start */
+  .bg-program {
+    top: 73px;
+  }
+
+  .bg-program img {
+    width: 100%;
+  }
+
+  .bg-program-gray {
+    border-radius: 0 0 0 150px;
+  }
+
+  .program-main {
+    padding: 62px 0 370px 0;
+  }
+
+  .btn2-program {
+    padding: 8px 16px;
+  }
+  .program-content {
+    padding: 0;
+  }
+  .program-person {
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+    padding: 0;
+  }
+
+  .program-person li + li {
+    margin-bottom: 32px;
+  }
+
+  .version-items {
+    padding: 16px 16px 32px 16px;
+    margin-bottom: 24px;
+  }
+
+  .version-items {
+    width: 335px;
+  }
+
+  .gray-box {
+    padding: 16px;
+  }
+
+  .QA-items {
+    padding: 16px;
+  }
+  /* program.html end */
+
+  .display-sm-none {
+    display: none;
+  }
+
+  .display-pc-none {
+    display: block;
+  }
+
+  .content {
+    margin-top: 80px;
+  }
+  .main .main-visual {
+    height: 360px;
+    background-image: url("https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/home.svg"),
+      url("https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/bg_home_sm.svg");
+    background-repeat: no-repeat;
+    background-size: 334px;
+    background-position-x: center;
+    background-position-y: 0px, 100px;
+  }
+
+  .ball01 {
+    width: 49px;
+    height: 126px;
+    background-image: url("https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/ball01.svg");
+    background-size: 126px;
+    background-repeat: no-repeat;
+    background-position: right;
+    top: 790px;
+    left: 0;
+  }
+
+  .ball02 {
+    width: 88px;
+    height: 135px;
+    background-image: url("https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/ball02.svg");
+    background-size: 135px;
+    background-repeat: no-repeat;
+    background-position: left top;
+    top: 3100px;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+  }
+
+  .ball03 {
+    width: 77px;
+    height: 153px;
+    background-image: url("https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/ball03.svg");
+    background-size: 153px;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 4830px;
+    background-position-x: right;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+  }
+
+  .ball04 {
+    width: 96px;
+    height: 204px;
+    background-size: 204px;
+    top: 1390px;
+  }
+
+  /* font size */
+  .sm-f-s-xs {
+    font-size: 16px;
+  }
+
+  .sm-f-s-s {
+    font-size: 18px;
+  }
+
+  .sm-f-s-m {
+    font-size: 24px;
+  }
+
+  .sm-f-s-lg {
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .sm-f-s-xl {
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  /* margin-bottom設定 */
+  .sm-mg-b-s {
+    margin-bottom: 8px;
+  }
+
+  .sm-mg-b-sm {
+    margin-bottom: 16px;
+  }
+
+  .sm-mg-b-m {
+    margin-bottom: 24px;
+  }
+
+  .sm-mg-b-lg {
+    margin-bottom: 32px;
+  }
+
+  .sm-mg-b-xl {
+    margin-bottom: 60px;
+  }
+
+  .logo {
+    max-width: 121px;
+  }
+
+  /* header */
+  .header-setting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+  }
+  .header {
+    /* padding-top: 16px; */
+    /* padding-bottom: 16px; */
+    border-bottom: 2px #ffd153 solid;
+  }
+
+  /* 主視覺 */
+  .main {
+    padding: 32px 0;
+    background-image: none;
+  }
+
+  /* 三大平台 */
+  .platform-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .platform-list h3 {
+    margin: 16px 0;
+  }
+
+  .platform-list img {
+    width: 60px;
+  }
+
+  /* 角色卡 */
+  .character-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .character-items {
+    width: 260px;
+  }
+
+  /* 方案介紹 */
+  .program-info {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .program-info .program-list {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+  .program-info .program-list li {
+    margin-bottom: 24px;
+  }
+
+  .program-info .container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .program-items {
+    width: 230px;
+    margin: 0 auto;
+  }
+
+  .feedback-items {
+    width: 100%;
+  }
+
+  .rank img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .footer {
+    padding-top: 260px;
+  }
+  .copyright {
+    line-height: 1;
+  }
+
+  .go-top {
+    position: fixed;
+    z-index: 99;
+    top: calc(100% - 60px);
+    right: 16px;
+  }
+
+  .go-top img {
+    width: 50px;
+    height: 50px;
+  }
+}
